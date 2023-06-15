@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manipulating DOM</title>
+
+    <style>
+        .container{
+            width: 500px;
+            height: 500px;
+           margin-left: 30%;
+           border: 5px solid black;
+           border-radius: 10px;
+        }
+        h3{
+            background-color: rgb(231, 114, 114);
+            text-align: center;
+        }
+        img{
+            height: 430px;
+            filter: grayscale(100%);
+        }
+    </style>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>More About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    
+    
+    <div class="container">
+        <h3>img dollar</h3>
+        <img src="./image/cover.png" alt="" id="imgg" onmouseover="fun()" onmouseout="fun2()">
+    </div>
+
+    
+
+    <input type="text" name="textfield" id="textfield" onkeypress="fun3()">
+
+   
+   
+   
+   <script>
+        let main = document.getElementById('main');
+        console.log(main);
+        let nav = document.getElementById('nav');
+         //document.getElementsByClassName('nav').innerHTML="<li>abc<li>";
+        console.log(nav);
+
+        let containers = document.getElementsByClassName('container');
+       
+
+        console.log(containers);
+
+        // let sel = document.querySelector('#nav>li');
+        // console.log("Selector returns ", sel)
+
+        let sel = document.querySelectorAll('#nav>li');
+        console.log("Selector returns ", sel)
+
+     
+        function fun()
+        {
+          document.getElementById('imgg').style.filter="grayscale(0%)";
+        }
+        function fun2()
+        {
+          document.getElementById('imgg').style.filter="grayscale(100%)";
+        }
+        function fun3()
+        {
+            alert("The key has been pressed");
+        }
+    </script>
+</body>
+</html>

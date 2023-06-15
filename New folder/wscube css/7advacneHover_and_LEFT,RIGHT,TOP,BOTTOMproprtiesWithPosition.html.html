@@ -1,0 +1,64 @@
+<!-- note--absolute position mean that element is will cosider psoition relative to its parent but parent element position should be set(relative/absolute) otherwise if not set parent position then child element will take rlative position from page/body not from actual parent. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .main {
+            width: 700px;
+            height: 800px;
+            background-color: red;
+            margin: auto;
+            /*move div to center horizontally*/
+            position: relative;
+            /*position should be given to parent ohterwise child .temp div consider body as parent*/
+        }
+
+        .temp {
+            width: 200px;
+            height: 300px;
+            background-color: aquamarine;
+            left: 50px;
+            top: 50px;
+            position: absolute;
+            /* if parent .main div position is not declare then this absolute position for child(.temp div) will consider body as parent not .main div*/
+            transition: 2s;
+        }
+
+        .main:hover .temp {     /*this syntex applied only  if temp is child of main .this syntex saying hover is apply to child(temp) of main*/
+            /*if hover to main div these property only apply to temp div*/
+            opacity: .3;
+            transform: rotate(30deg);
+        }
+
+
+        .res{
+            height: 500px;
+        }
+        .res div{
+            background-color: aqua;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="temp">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, repellendus aperiam? Non ipsa unde
+            voluptas optio quaerat ducimus fugit officiis aut eligendi voluptatibus sint ea saepe tempore quibusdam
+            totam,
+            rerum voluptates id velit porro eum voluptatum nostrum adipisci dolor cum. Eum iure expedita deleniti animi
+            unde
+            voluptate esse aliquam iste!
+        </div>
+        <div class="res">
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eius facilis id libero asperiores
+                veniam error reprehenderit, porro magni, quos quibusdam nam voluptatem possimus? Velit nulla quis
+                incidunt explicabo asperiores!</div>
+        </div>
+    </div>
+</body>
+
+</html>

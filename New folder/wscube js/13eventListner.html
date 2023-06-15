@@ -1,0 +1,36 @@
+<html>
+<head>
+</head>
+
+<body>
+<div id="counter"></div>
+<h1 id="abc"></h1>
+<button id="btn">Click Me</button>
+<button id="stop">stop</button>
+</body>
+
+<script type="text/javascript">                           //event listner work same as calling function when event occur we can also use this method to define what event occur when keypress mouse click etc .
+var i = 1;
+//element.addEventListener(event, listenerFunction);    this is the syntex of eventListner . event are predefine and lisnterfunction are user define in which we specify what happen when event occur.
+var ref;
+document.getElementById('btn').addEventListener("click",ref=()=>{document.getElementById('abc').innerHTML=i; i++;});  //arrow fun used
+
+/*or 
+
+document.getElementById('btn').addEventListener("click",fun1());
+now define fun1 explicitly.
+*/
+
+
+/* removeEventListner work same way 
+
+element.removeEventListener(event, listenerFunction); =====>   syntex======
+
+element is the DOM element from which you want to remove the event listener.
+event is a string that specifies the type of event for which you want to remove the listener.
+listenerFunction is the same function reference that was originally passed to addEventListener.
+*/
+
+</script>
+
+</html> 

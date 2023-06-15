@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="b1" onclick="temp1=setInterval(fun1,2000)">show date/time using interval</button>       <!--fun1 run in every 2sec-->
+    <button id="b2" onclick="clearInterval(temp1)">stop date/time using setInterval</button>                         <!--clearinterval stops setinterval fun-->
+
+
+    <button id="b3" onclick="temp2=setTimeout(fun2,3000)">show date/time using timeout</button>   <!--fun2 run only once after 3sec of b3 click -->
+    <button id="b4" onclick="clearTimeout(temp2)">stop date/time using setTimeout</button>                         <!--cleartimeout stops settimeout fun to run if b4 click before 3sec-->
+
+
+  <script>
+        function fun1()
+        {
+            document.getElementById("b1").innerHTML=Date();
+        }
+        function fun2()
+        {
+            document.getElementById("b2").innerHTML=Date();
+        }   
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: brown;
+        }
+        h1{
+            color: inherit;
+        }
+        .inherit{
+            color:blueviolet;
+        }
+        h2{
+            color: inherit;
+        }
+
+        .overflow{
+            border: 2px solid black;
+            font-size: 200%;
+            width: 140px;
+            height: 80px;
+        }
+
+        .overflowscroll{
+            border: 2px solid black;
+            font-size: 200%;
+            width: 190px;
+            height: 80px;
+            overflow: scroll;
+            margin-top: 300px;
+        }
+
+        .imgoverflow{
+            border: 2px solid black;
+            margin-top: 300px;
+            width: 190px;
+            height: 150px;
+        }
+
+        .imgcontain{
+            height: 100%;    /*img width,height=100% mean img fit in their parent which in this case is div */
+            width: 100%;
+            object-fit: cover; /* object-fit is used to maintain aspect-ratio of img*/
+            /*
+           object-fit: contain;
+           object-fit: fill;
+            */
+        }
+
+    </style>
+    
+</head>
+<body>
+    <h1>inherit color from parent body</h1>
+    <div class="inherit">
+        <h2>inherit color from parent div</h2>
+   </div>
+   
+   
+ 
+    <div class="overflow">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, modi.
+    </div>
+
+    <div class="overflowscroll">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, modi.
+    </div>
+
+    <div class="imgoverflow"><img src="./image/cover.png" alt="" class="imgcontain"></div>
+</body>
+</html>

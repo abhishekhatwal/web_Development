@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+        <button onclick="fun1()">prompt</button>
+        <script>
+            var x;
+
+            document.write("abcs");          //      The document.write method is not suitable for use after the page has finished loading, as it overwrites the entire content of the page when called after the page has been parsed.
+            document.write("<h1> defgh</h1>");    //writes on page
+
+            function fun1(){
+                x=window.prompt("what ur name");     //dialogue box appear
+            }
+
+            window.alert("alertbox");
+
+            window.confirm("happy");
+
+            console.log(x);     //print on conlose
+
+        </script>
+    </body>
+</html>

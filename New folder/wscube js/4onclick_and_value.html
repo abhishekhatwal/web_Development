@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<input type="number" name="name" id="name"/>
+<button onclick="greet()">
+    press
+</button>
+<div class="abc" style="width: 100px; height: 100px; background-color: cadetblue;"></div>
+<div class="abc" style="width: 100px; height: 100px; background-color: rgb(78, 87, 88);"></div>
+<div class="abc" style="width: 100px; height: 100px; background-color: rgb(97, 79, 132);"></div>
+<div class="abc" style="width: 100px; height: 100px; background-color: cadetblue;"></div>
+</body>
+<script type="text/javascript">
+    function greet() {                                          //way to declare function in js
+        var x=document.getElementById('name').value;      //value will take the input from input type tag
+        y=x*3;                             
+        document.getElementsByClassName('abc')[1].innerHTML=y;       //it will only affect 2nd div not all div
+        
+    }
+</script>
+
+</html>

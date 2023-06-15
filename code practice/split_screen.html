@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+       body{
+           height: 100vh; /*100% width height not work because parent window width=height=0px, 100 viewpoint height work*/
+       }
+        .container{
+            width:  100%;
+            height: 100%;
+        }
+        .left{
+            width:  50%;
+            height: 100%;
+            float: left;
+            background-image: url("image/left.jpeg");
+            background-repeat: no-repeat;
+            background-position: center; /*center the img*/
+            background-size: cover; /*cover background fully with backround-img*/
+           
+           
+        }
+        button{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            align-items: center;
+        }
+        .right{
+            width:  50%;
+            height: 100%;
+            float: left;
+            background-image: url("image/right.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .leftafter{
+            width:  80%;
+            height: 100%;
+            float: left;
+            background-image: url("image/left.jpeg");
+            background-repeat: no-repeat;
+            background-position: center; /*center the img*/
+            background-size: cover;
+        }
+        .rightafter
+        {
+            width:  20%;
+            height: 100%;
+            float: left;
+            background-image: url("image/right.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;  
+        }
+        .leftbefore{
+            width:  20%;
+            height: 100%;
+            float: left;
+            background-image: url("image/left.jpeg");
+            background-repeat: no-repeat;
+            background-position: center; /*center the img*/
+            background-size: cover;
+        }
+        .rightbefore
+        {
+            width:  80%;
+            height: 100%;
+            float: left;
+            background-image: url("image/right.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;  
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left" id="leftid" onmouseover="fun1()" onmouseout="fun2()"><button>click here</button></div>
+        <div class="right" id="rightid" onmouseover="fun3()" onmouseout="fun4()"></div>
+    </div>
+
+    <script>
+        function fun1(){
+         document.getElementById("leftid").className="leftafter";
+         document.getElementById("rightid").className="rightafter";
+        }
+        function fun2(){
+         document.getElementById("leftid").className="left";
+         document.getElementById("rightid").className="right";
+        }
+        function fun3(){
+         document.getElementById("leftid").className="leftbefore";
+         document.getElementById("rightid").className="rightbefore";
+        }
+        function fun4(){
+         document.getElementById("leftid").className="left";
+         document.getElementById("rightid").className="right";
+        }
+    </script>
+</body>
+</html>

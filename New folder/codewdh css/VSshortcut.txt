@@ -1,0 +1,7 @@
+for selecting multiple word and retype it at same time--> hold alt and with mouse(not keyboard up/down arrow) right click(dont hit enter) in every position where u want to retype/readd text(can select wole sentense and retype it). 
+for selecting same type of word and retype it at same time-->hit ctrl+f then type the word that u want to retype then hit alt+enter and then retype all word at same time
+for formatting/aligning the whole code -->select all code hit alt+shift+f
+if u want the perticular block of code again and again in code -->select code hold alt+shift hit bottom/up arrow key the code will be duplicated as many time u want
+if u want to move ur code left or right-->for left move-->select code hit shift+tab , for right move-->select code hit only tab
+if u want to move code up and down without using ctrl+x and ctrl+v -->select code hold alt and hit bottom/up arrow key
+and if u want to move single line up/down-->point the cursor at that line and hold alt hit up/down key

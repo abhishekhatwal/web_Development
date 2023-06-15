@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent
+        {
+            height: 300px;
+            width: 500px;
+            border: 2px solid black;
+            overflow: auto;
+        }
+
+        .img
+        {
+            left: 190px;
+            position:absolute; /*poition wrt parent ,also other element think that there is no element in that poition and overlap with that element*/
+
+         /*   position:absolute;  poition wrt its actual position*/
+
+           /* position:fixed; element will be fixed on whole webpage */
+        }
+
+        .first{
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            position: absolute;    /* when position is absolute of .first the other element does not cosider .first element poition and overlap on .first position*/
+            /*position: relative;     when position is relative .second block/other element  know that .first block is there*/
+           /* position: fixed;  when position is fixed the .first block fixed with the body even though u scroll the page it will be scrolled with body*/
+        }
+        .second{
+            background-color: rgb(255, 0, 30);
+            width: 300px;
+            height: 300px;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="parent">
+       <img src="./image/cover.png" alt="" width="140px" height="140px" class="img">
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quod corporis magnam reprehenderit odit, hic numquam asperiores quaerat ipsam nemo nisi labore saepe eos. Ducimus atque vel itaque accusantium voluptatibus! Odit, ratione sed nostrum facere maiores obcaecati illo dolorem necessitatibus similique id mollitia autem, rem velit ipsa excepturi, voluptates dolorum? A molestias incidunt, repellat fugiat error voluptatem amet necessitatibus aliquid reiciendis non quia exercitationem consequuntur excepturi laborum voluptatibus dolor! Quisquam saepe minus eos eaque animi veritatis exercitationem perferendis doloremque. Repudiandae soluta eligendi, optio voluptatibus saepe, rerum provident quaerat sit, nisi illo porro eos quae eveniet. Soluta, iusto perspiciatis? Officia aspernatur excepturi animi dolorum, exercitationem ut, molestiae pariatur eveniet, dolorem velit rerum! Ipsam laboriosam id unde? Dolorem repellendus vitae unde dolores temporibus praesentium accusamus! Rem hic molestias quas accusamus consequuntur dolorem neque, dolores amet exercitationem earum. Iste facilis inventore asperiores aliquam excepturi et facere. Repudiandae, hic ducimus dolor quam facere aperiam optio voluptatibus quo pariatur esse? Voluptate accusamus dolore tempora veritatis aliquam et, dicta iusto. Beatae mollitia ratione quis repellendus odit harum quam eaque esse aspernatur possimus voluptatem cupiditate minus enim deserunt perspiciatis fuga provident necessitatibus doloremque, aperiam quo ea deleniti! Commodi velit debitis dolores voluptate accusamus consequuntur, sunt impedit neque.</p>
+    </div>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptates animi, consequuntur cupiditate expedita ipsum est adipisci natus mollitia molestiae impedit dolor illo culpa quam aspernatur deleniti accusamus tenetur dolores dolorem modi voluptatum magni exercitationem. Unde dolorem itaque blanditiis assumenda. Nobis a est necessitatibus ratione accusantium unde error voluptates, sequi fuga atque hic debitis at quasi corporis ex magni! Ut repudiandae temporibus, repellat alias sunt incidunt eligendi corrupti enim consectetur nisi laudantium perspiciatis voluptates, consequatur at tenetur, assumenda qui quia adipisci! Quia cumque corrupti qui eligendi, dicta consequuntur autem natus a error veniam distinctio eius aspernatur delectus non rerum dignissimos, eos, ea quos blanditiis magnam totam nulla. Culpa a distinctio id, facere voluptas aliquam! Eius, tempore commodi modi maiores molestias animi facilis accusamus dolores enim voluptatem assumenda optio sint! Suscipit quod ex natus dignissimos aspernatur. Vero quae sint corporis, nobis exercitationem obcaecati iusto amet officia voluptatem reprehenderit fugiat. Odit quas rerum animi ipsum, vel id ut suscipit, exercitationem impedit nihil culpa doloribus incidunt magnam. Iste voluptate nisi ea molestias dolor minima nesciunt tempore eos totam nam sapiente maiores, odio quod reiciendis est voluptas itaque, commodi dicta. Praesentium deleniti placeat quam facilis tenetur hic saepe tempore autem sint quod quae, numquam, consectetur in amet est unde natus rerum veritatis porro illum. Ducimus suscipit praesentium incidunt eum eligendi laborum tenetur asperiores id iusto, voluptas accusantium unde voluptatibus laboriosam, eius molestias in at! Repellendus corrupti blanditiis dolore tempora omnis ipsam molestiae excepturi iste! Nemo iusto cum praesentium sunt eligendi, molestiae nesciunt ex eaque adipisci nulla vero error voluptas neque amet doloremque earum obcaecati minus, incidunt commodi! Ab eveniet officiis ducimus doloribus amet dicta ipsum rerum ullam voluptatum, aspernatur nulla illo saepe, soluta nihil molestiae. Fugit quibusdam qui placeat eligendi enim quia quasi ipsam aperiam consequuntur, veritatis aliquid ipsum autem, necessitatibus velit perferendis, sequi consequatur! Voluptatibus, dolor eaque molestiae quam culpa a distinctio dolorem sequi nisi, iste mollitia doloribus laudantium unde accusantium dicta, rerum minus cupiditate quia recusandae numquam nostrum excepturi. Obcaecati beatae culpa molestiae commodi porro dolore velit excepturi facere voluptatum. Necessitatibus distinctio quos cupiditate ut aliquid pariatur maxime alias at! Similique et facere, dignissimos quos consequuntur ad laborum, laudantium aspernatur sed nam omnis atque voluptas saepe nostrum quia natus optio doloremque. Commodi cum, quia iure ab ratione excepturi architecto suscipit cumque quis corporis temporibus dolores natus. Rerum consequuntur veritatis doloribus laudantium laboriosam voluptatum accusamus est vero recusandae, nobis, itaque aperiam perspiciatis? Dicta molestiae eaque doloremque aliquam dolorum praesentium modi perferendis soluta reiciendis quaerat eveniet facere voluptatem magni, animi, aliquid esse nesciunt perspiciatis unde facilis tempora corrupti quam magnam. Ipsam corporis enim dolores doloribus rem, odio consequatur. Illum distinctio quo blanditiis itaque labore, fugiat error adipisci, quia, nihil facere omnis! Quos architecto molestiae neque consequuntur possimus voluptas eum enim quae, at ullam repellat sapiente! Inventore maxime eum, distinctio praesentium voluptatum at exercitationem dolorem tempore aperiam, quisquam eius ipsam, eaque rerum ad quibusdam vero assumenda. Dolores nam minima temporibus placeat qui dolorem at nesciunt, architecto adipisci officia similique recusandae dicta itaque accusantium quia modi.</p>
+
+    <div class="first"></div>
+    <div class="second"></div>
+</body>
+</html>

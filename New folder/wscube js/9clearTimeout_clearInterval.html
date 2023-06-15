@@ -1,0 +1,45 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+
+<script type="text/javascript">
+//logic-settimeout and cleartimeout
+var my;
+function starttimeout1(){
+my = setTimeout(function() { document.write("helllo") },5000);        //if clear interval button is press before these 5000ms then this start/setTimeout function did not executed.
+}
+
+function stoptimeout1(){
+clearTimeout(my);
+}
+//logic-setinterval and clearinterval
+var my2;
+var i=0;
+
+function startinterval1(){
+my2 = setInterval(function() { document.getElementById("abc").innerHTML=i; i++;},500);  
+// i++;   dont increment value outside setInterval function it will not work    
+}
+
+function stoptinterval1(){
+clearInterval(my2);
+}
+</script>
+
+<body>
+    <button onclick="starttimeout1()">set timeout</button>
+    <button onclick="stoptimeout1()">clear timeout</button>
+    <br/>
+    <br/>
+    <br/>
+    <h1 id="abc"></h1>
+    <button onclick="startinterval1()">set interval</button>
+    <button onclick="stoptinterval1()">clear interval</button>
+    
+   
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 4px solid black;
+            width:fit-content;
+            margin-left: 40%;
+        }
+        p{
+            margin: 15px;
+        }
+        input[type="button"]{
+            position: relative;
+            left: 35%; 
+        }
+    </style>
+</head>
+
+<body>
+          <div class="container">
+          <p>inches <input type="number" name="abc" id="inch" placeholder="enter inches"></p>
+          <br>
+          <p>feet <input type="number" name="def" id="feet" placeholder="enter feet"></p>
+          <br>
+         <input type="button" value="convert" id="converter" onclick="convert()">
+         </div>
+ 
+<script>
+
+function convert()
+{
+   let a= document.getElementById("inch").value;
+   let b= document.getElementById("feet").value;
+
+   if(a)
+   {
+    document.getElementById("feet").value=a*12;
+   }
+   else
+   {
+    document.getElementById("inch").value=b/12;
+   }
+}
+
+</script>
+
+<!--  different method   -->
+
+<!--  <input type="button" onInput="convert(this.value)">   -->
+
+</body>
+</html>

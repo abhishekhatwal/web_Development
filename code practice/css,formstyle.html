@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        form{
+            padding: 15px;
+           margin: 35px;
+           border: 2px solid black;
+           background-color: bisque;
+        }
+        input[type="textarea"],
+        input[type="text"],
+        input[type="number"],
+        input[type="password"],
+        input[type="email"],
+        input[type="date"],select,textarea,fieldset
+        {
+            width: 100%;   /*width of all element in form become width of parent which is form also on squeezing or changing ratio of screen all element automatically adjust */
+             padding: 4px;
+             border: 2px solid black;
+             border-radius: 15px;
+        }
+
+        h1,h2{
+            text-align: center;
+        }
+
+        #button{
+            width: 100%;
+            font-weight: bold;
+            font-size: 1.5em;
+            background-color: chartreuse;
+        }
+
+        #button:hover{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <form>
+        <h1>payment form</h1>
+        <h2>personal detail</h2>
+        
+        <p>name: <input type="text" name="name" id="" required></p>
+      
+        <fieldset>
+        <legend>gender</legend>
+        <p> 
+        Male <input type="radio" name="gender" id="male">
+        female <input type="radio" name="gender" id="female">
+        </p>
+       </fieldset>
+
+       <p>Address: <textarea name="address" id="address" cols="100" rows="5"></textarea></p>
+       
+       <p>Email: <input type="email" name="email" id="email" required></p>
+       <p>pincode: <input type="number" name="pincode" id="pincode" required></p>
+       <br>
+       <h2>card detail</h2>
+       <p>Card type: <select name="cardtype" id="cardtype" required>
+          <option value="">select card type</option>
+          <option value="visa">Visa</option>
+          <option value="rupey">rupey</option>
+          <option value="master">mastercard</option>
+         </select>  
+       </p>
+
+       <p>card number <input type="number" name="number" id="num" required></p>
+       <p>expiry date: <input type="date" name="exp_date" id="dxp_date" required></p>
+       <p>cvv: <input type="password" name="cvv" id="cvv" required></p>
+       
+       <input type="submit" value="pay now" id="button">
+
+
+    </form>
+   
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            table,td,tr{
+                border: 2px solid black;
+                border-collapse: collapse;
+                background-color: rgb(250, 241, 229);
+                
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+        <table align="center">
+            <tr>
+                <td>sid</td>
+                <td><input type="number" name="fid" id="fid" required="" pattern="\d{8}" ></td>
+            </tr>
+            <tr>
+            <td>name</td>
+            <td><input type="text" name="name" id="fname" required="" pattern="^[A-Z][a-z]{3,}"></td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td><input type="email" name="femail" id="femail" required="" pattern="^[a-zA-Z0-9_.]+[@][a-zA-Z]+[.]+[a-zA-Z]+$"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="file" name="" id=""></td>
+        </tr>
+        <tr>
+            <td>password</td>
+            <td><input type="password" name="fpassword" id="fpassword" required="" pattern="^[A-Z][a-z0-9]+[@|%|$|*][A-Za-z0-9]+$"></td>
+        </tr>
+        <tr>
+            <td>confirm password</td>
+            <td><input type="password" name="cpassword" id="cpassword" required="" pattern="^[A-Z][a-z0-9]+[@|%|$|*][A-Za-z0-9]+$"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><button id="btn" onsubmit="check()">submit</button></td>
+            
+        </tr>
+        </table>
+    </form>
+        <script>
+            function check()
+            {
+                var pass=document.getElementById("fpassword").value;
+                var conpass=document.getElementById("cpassword").value;
+    
+                if(pass!=conpass)
+                {
+                    alert("password not match");
+                    document.getElementById("fpassword").value="";
+                    document.getElementById("cpassword").value="";
+                    return;
+                }
+        
+            }
+        </script>
+    </body>
+    </html>

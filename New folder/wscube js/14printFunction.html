@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body id="main">
+    <div id="ntpri" style="width: 100%; height:80px; margin: 40px;">Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Odio
+        alias accusantium quae itaque ipsa quasi autem error ut ipsum officiis beatae fuga dicta laborum atque, maxime
+        harum animi, cupiditate, quam dignissimos ducimus consequuntur sed reprehenderit? Neque consequatur autem,
+        provident voluptates illo, pariatur earum animi nam molestiae eius dolorum maxime perferendis.</div>
+
+    <!--window.print() function print the whole page but we want to print only second para so we have to first seperate the second para print the second para and then again swap in with whole body-->
+    <div id="pri" style="width: 100%; height:80px; margin: 40px;">Pollution has become a very common yet serious issue
+        in today’s
+        world. It has been there in different forms since a long time even before human evolution such as volcanic
+        eruptions, wildfire which lead to various photochemical reactions in the atmosphere. The current concern is that
+        it is rising day by day due to various resources of pollutants. And, one of the main pollutants are humans and
+        man-made machines. It is right to say that pollution is damaging the mother earth severely and we, humans,
+        should play our part to prevent it from happening.</div>
+    <button onclick="fun1()">print</button>
+</body>
+
+<script>
+
+    function fun1() {
+        var data = document.getElementById("main").innerHTML;
+        var pridata = document.getElementById("pri").innerHTML;
+        document.getElementById("main").innerHTML = pridata;
+        window.print();
+        document.getElementById("main").innerHTML = data;
+    }
+
+</script>
+
+</html>

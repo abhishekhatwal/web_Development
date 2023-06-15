@@ -1,0 +1,37 @@
+
+<html>
+    <head>
+<style type="text/css">
+.red{
+color: red;
+}
+
+.blue{
+color: blue;
+}
+
+</style>
+</head>
+<body>
+    <div id="test" class="red">
+        Hello Everyone!
+        </div>
+        <button onclick="fun1()">click</button>
+      
+</body>
+<script>
+  //  element.getAttribute(attributeName); ==> syntex
+  //element.setAttribute(attributeName, attributeValue); ==>syntex
+
+      function fun1(){
+     var x= document.getElementById("test").getAttribute("class");
+     if(x=="red"){
+        document.getElementById("test").setAttribute("class","blue");
+     }
+     if(x=="blue")
+     {
+        document.getElementById("test").setAttribute("class","red");
+     }
+    }
+</script>
+</html>

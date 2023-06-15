@@ -1,0 +1,29 @@
+<html>
+
+</head>
+
+<body>
+Please enter your number<br/>                             <!--this refernce will pass the current object in this case pass the inpt type element object-->
+<input type="text" name="" onkeyup="val(this)">           <!-- onkeyup event run when key press from keyboard. run for every time we press any key(for every key press it will run val function)-->
+<div id="res"></div>
+
+</body>
+
+<script type="text/javascript">
+function val(x) {
+    if (isNaN(x.value)) {                 //is NaN() function check if not a number 
+document.getElementById('res').innerText = "Please enter numbers only";
+    }
+else{
+document.getElementById('res').innerText = "";                   //else part is imp otherwise for empty  field as well it will show please enter number only
+}
+if(x.value.length>10){
+    document.getElementById('res').innerText = "enter less then 10 digit only";
+}
+else{
+    document.getElementById('res').innerText = "";
+}
+}
+
+</script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .abc{
+            color: aqua;
+        }
+        .xyz{
+            color: rgb(255, 0, 0);
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="par" class="abc" style="border: 2px solid black;">text simplw</h1>
+
+    <script>
+        document.getElementById('par').getAttribute("color");           //retrun the color attribute value
+        document.getElementById('par').setAttribute("class","xyz");      //change the class atrribute
+        document.getElementById('par').removeAttribute("style");           //remove the style attribute
+
+        let c= document.getElementById('par').className;      //return the classname
+       let b= document.getElementById('par').classList;            //return the classlists in array
+
+      let value= document.getElementById('par').hasAttribute("class");     //return true if contain class else return false
+      let nod= document.getElementById('par').hasChildNodes();      //return if contain childnodes else false 
+       
+</script>
+</body>
+</html>

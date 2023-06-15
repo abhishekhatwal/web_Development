@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        header{
+            background-color: aquamarine;
+            text-align: center;
+            font-size: 10em;
+            font-weight: bold;
+        }
+        nav{
+            background-color:bisque;
+            padding: 10px;
+        }
+        .navdiv{
+            display: flex;
+            align-items: center;
+            align-content: center;
+            padding: 20px;
+        }
+        .navdiv img,a{
+           margin: auto;
+           text-decoration: none;
+        }
+        .navdiv img{
+            height: 80px;
+            border-radius: 40px;
+        }
+        .sectiondiv{
+            height: 400px;
+            background-color: black;
+            margin-top: 10px;
+            background-image: url("https://wallpaperaccess.com/full/1105195.jpg");
+            background-position: center;
+        }
+        .secitem{
+            display: flex;
+            justify-content: center;
+        }
+        .secitem div{
+            width: 80px;
+            height: 80px;
+            background-color: blueviolet;
+            margin: 10px ;
+            transition: all 0.5s ease-in-out;
+        }
+        .box1:hover{
+            transform: rotate(360deg);
+            background-color: brown;
+        }
+        .box2:hover{
+            transform: scale(3);
+            background-image: url("https://r1.ilikewallpaper.net/iphone-x-wallpapers/download-123471/ambient-music.jpg");
+            background-position: center;
+        }
+        .box3:hover{
+            transform:translate(-800px,100px); /* -x axis,+y axis*/
+        }
+        .box4:hover{
+            visibility: hidden;
+        }
+        footer{
+            background-color: bisque;
+            bottom: 0px;
+            margin-top: 10px;
+           
+        }
+        .footerdiv
+        {
+           display: flex;
+        }
+        .footerdiv p{
+            cursor: pointer;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>Music</header>
+    <nav>
+        <div class="navdiv">
+        <img src="https://thumbs.dreamstime.com/b/music-flyer-rhythm-waves-audio-streaming-playlist-brouch-vector-illustration-cover-art-mobile-wallpaper-music-wallpaper-headphones-205438137.jpg" alt="img">
+        <a href="#">m player</a>
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">help</a>
+    </div>
+    </nav>
+   
+    <section>
+        <div class="sectiondiv">
+            <p style="font-size:2em; font-weight: bold; color: greenyellow;">click the boxes to see tansition</p>
+        <div class="secitem">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+       </div>
+        </div>
+    </section>
+  
+    <footer>
+        <div class="footerdiv">
+            <p>instagram</p>
+            <p>twitter</p>
+            <p>twitter</p>
+            <p>facebook</p>
+        </div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, eveniet.</div>
+    </footer>
+</body>
+</html>

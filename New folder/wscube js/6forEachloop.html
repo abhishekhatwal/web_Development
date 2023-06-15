@@ -1,0 +1,23 @@
+<html>
+<script>
+
+    var cars = ["car1","car2","car3","car4","car5","car6"];
+
+    //syntex-> arrayname.forEach(function name);
+    //fuctction name(item(necessary),index(not necessary),array(not necessary)){}
+    
+    cars.forEach(car);
+    function car(item, index, array){
+    
+    // document.write(index+" => "“+item+"<br/>
+    array[index] = item+"0";
+    }
+
+    cars.forEach(after) ;
+
+    function after(item, index){
+    document .write(index+" => "+item+"<br/>");
+
+    }
+    </script>
+    </html>

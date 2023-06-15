@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+       <button onclick="fun1(this)">click</button>       <!--this keyword is define the object of button here-->
+        
+        <script>
+           function fun1(refe){
+            refe.style.backgroundColor="red";           //refe contain this reference of element button here which can be used to directly access elemment without using getelementbyid method.
+           } 
+
+           alert(this);                                //here this refer to window object
+        </script>
+    </body>
+</html>

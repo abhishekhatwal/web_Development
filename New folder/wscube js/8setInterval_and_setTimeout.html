@@ -1,0 +1,39 @@
+<html>
+
+<body>
+<button onclick="test()">interval</button>
+<button onclick="test2()">timeout</button>
+</body>
+
+<script type="text/javascript">
+    //set interval function invokes in every x  millisec(run multiple times)
+    //settimeout function will only run 1 time and invokes after a certain millisec for only one time
+function test() 
+{
+setInterval(function() {alert("hello!");},1000);          //function(){}  is a anonyomous function(other way to define a function) 
+}
+
+//other way to define above expression
+/*
+1>using regular way
+function test() {
+setInterval(fun1,1000);            
+}
+
+function fun1(){
+}
+
+2>using arrow function
+function test() {
+setInterval(() =>{alert("hello!");},1000);         
+}
+
+*/
+
+function test2() 
+{
+setTimeout(function() {alert("welcome");},1000);          
+}
+</script>
+
+</html>

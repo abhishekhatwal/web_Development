@@ -1,0 +1,33 @@
+<html>
+<body>
+    <input type="number" id="num">
+<button onclick="test()">Click Me</button>
+<h1 id="res"></h1>
+<h2 id="tem"></h2>
+</body>
+
+<script type="text/javascript">
+function test() {
+    try{
+        if(document.getElementById("num").value>5)
+        {
+            throw "enter valid num";
+        }
+        else{
+            document.getElementById('res').innerText = "";
+        }
+
+    }
+catch(err){                                   //this err is variable which catch the msg send by throw i.e=enter valid number
+document.getElementById('res').innerText = err;
+}
+finally{
+    
+    document.getElementById('tem').innerText = "abcd";         //if number >5 enter then only this text will appear otherwise with this text err message also appear in h1 tag.
+    
+   // document.write("this will print");           this will overwirte everthing on page only print this will print bcz The document.write method is not suitable for use after the page has finished loading, as it overwrites the entire content of the page when called after the page has been parsed.
+}
+}
+</script>
+
+</html>

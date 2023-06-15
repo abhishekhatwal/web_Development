@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <table align="center">
+            <tr>
+                <td>name</td>
+                <td><input type="text" name="dtext" id="dtext" required="" pattern="^[A-Za-z]+$"></td>
+            </tr>
+            <tr>
+                <td>card no.</td>
+                <td><input type="text" name="dnum" id="dnum" required="" pattern="^5[3-4][0-9]{2}[-][0-9]{4}[-][0-9]{4}[-][0-9]{4}"><td>
+            </tr>
+            <tr>
+                <td>month/year</td>
+                <td><input type="month" name="dmonth" id="dmonth"></td>
+            </tr>
+            <tr>
+                <td>cvv</td>
+                <td><input type="password" name="dpass" id="dpass" required="" pattern="\d{3}"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><button>submit</button></td>
+            </tr>
+        </table>
+    </form>
+
+    
+</body>
+</html>

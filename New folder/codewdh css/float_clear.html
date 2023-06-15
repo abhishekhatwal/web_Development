@@ -1,0 +1,105 @@
+<!--float property is convert block element into inline then if multiple float is used on multiple div(block element) then it will convert div into inline element 
+eg. if we creating navbar using div then give every div float:left (working--first div will float left side of parent element then 2nd div element floated left(in same row in which 1st div present) until it find 1st div in same row and placed right after 1st div  then same goes for 3rd and 4th div-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alignment</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid purple;
+            background-color: rgb(250, 226, 205);
+            margin: 33px auto;
+        }
+
+        .item {
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(248, 238, 238);
+        }
+
+        /*note --- while using float property on child/inside element the parent element style will be overflow/nullified to maintain parent style while using float on child element use overflow:auto propert on parent*/
+        #fruit {
+            float: left;  /*float proerty is used to create/convert block element into inline element(takes only spaces in screen which text/inside element width define does not take whole row) and left right is used to float the element on left or right side of screen, other option can also be used eg.diplay:flex etc*/
+            width: 48%;
+        }
+
+        #computer {
+            float:left;
+            width: 48%;
+        }
+
+        #stationary {
+                               /* float: left; */ 
+            clear: both; /*the element before it does having float property does not overlap it or no effect of float property of other element on it*/
+            width: 100%;
+        
+        }
+        p, h3 {
+            /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: justify;
+        }
+
+        h1 {
+            /*margin:auto  auto;  center  the element from horizantally and vertically*/ 
+            margin:  auto; /* ####impppportant -------------center the element horizontally, left and right margin from parent are equal with auto value*/
+            width: 455px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1> Welcome to my store </h1>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+                quibusdam explicabo, porro magnam quas sint enim cumque minima odit cupiditate ex itaque, eaque
+                distinctio sed ipsam totam, nihil tenetur. Recusandae. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Aspernatur fugiat iusto vel. Qui, veniam nam, enim dolore deleniti dignissimos
+                veritatis tenetur animi sunt voluptatem laboriosam, nihil inventore molestias totam. Quas ducimus
+                quibusdam quaerat necessitatibus.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+                quibusdam explicabo, porro magnam quas sint enim cumque minima odit cupiditate ex itaque, eaque
+                distinctio sed ipsam totam, nihil tenetur. Recusandae. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Rerum commodi vitae exercitationem necessitatibus laboriosam corporis dicta, eveniet
+                architecto reprehenderit eum id repudiandae deleniti fugiat fugit inventore ea dolorum neque amet nulla
+                vero culpa. Accusamus.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+                quibusdam explicabo, porro magnam quas sint enim cumque minima odit cupiditate ex itaque, eaque
+                distinctio sed ipsam totam, nihil tenetur. Recusandae.</p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>Stationary</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+                quibusdam explicabo, porro magnam quas sint enim cumque minima odit cupiditate ex itaque, eaque
+                distinctio sed ipsam totam, nihil tenetur. Recusandae.</p>
+        </div>
+    </div>
+</body>
+
+</html>
+

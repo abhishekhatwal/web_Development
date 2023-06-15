@@ -1,0 +1,79 @@
+<!--
+  note--absolute position mean that element is will cosider psoition relative to its parent but parent element position should be set(relative/absolute) otherwise if not set parent position then child element will take rlative position from page/body not from actual parent.
+
+  by positon absolute that element will conidser that no element present in parent and will move to corner(by default top left right bottom=0) of parent element even though other element is present it will overlap it. also other element will take his previous position by considering that absolute position element doesnt exsist(absolute position means element position is relative to its parent and other element doenot consider its actual postion and can overlap)
+  by position relative that element position is cannot be taken by other element even though that element shifted from its original position by giving top left right etc margin padding.(relative position means element position is relative to its actual position.other element cosider its actual psoition even though it displace from its actual postion other element doesnt take its previous/actual position) 
+  by position sticky the element will not become scrollable with screen become fixed with screen mean even we scroll screen element will be visible to us and  it is generally used in navbar bcz navbar should be seen with every scroll
+
+
+  --by w3school--
+  1> position relative-- An element with position: relative; is positioned relative to its normal position.Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+
+  2> position absolue--   An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+     Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.
+
+  3> position sticky-- An element with position: sticky; is positioned based on the user's scroll position.A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+  4> position fixed-- An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.A fixed element does not leave a gap in the page where it would normally have been located.it is like between absolute and sticky.other element overlap its actual postion.
+
+  5> position static--HTML elements are positioned static by default.Static positioned elements are not affected by the top, bottom, left, and right properties.An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            background-color: khaki;
+            height: 3444px;
+        }
+
+        /* CSS Position: static (default), relative, absolute, fixed, sticky */
+        .box {
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+
+        #box3 {
+            /* relative: Positions the element relative to its normal positon and will leave a gap at its normal position*/
+            /* position: relative; */
+
+            /* absolute: Positions the element relative to the positon of its first parent*/
+            /* position: absolute; */
+
+            /* top: 34px;
+        left: 134px; */
+
+            /* fixed: Positions the element relative to the browser window; */
+            /* position: fixed;
+        right: 4px;
+        bottom: 2px */
+
+            /* sticky: Positions the element relative to the users scroll position */
+            position: sticky;
+            top: 3px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chat with us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>

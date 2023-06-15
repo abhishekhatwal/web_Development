@@ -1,0 +1,12 @@
+<html>
+  <body>  
+</body>
+<script type="text/javascript">
+// var pattern = /[a-z][0-9]/i;
+//new regExp() fuction will create obj of regx in which  different argument(regx) specify different codition eg- one lowecase present,atleast one uppercase present etc these condition regx can be easily obtained from net
+var pattern = new RegExp('(?=.*[a-z])');   //regx=(?=.*[a-z]) denoted string should have alteast one lowecase character
+var str = "WsCubTech";
+console. log(pattern.test(str));          //output=true bcz atleast one lowcase character present in wsCunTech.
+</script>
+</html>
+

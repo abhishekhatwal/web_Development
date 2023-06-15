@@ -1,0 +1,54 @@
+<!--u can divide screen using grid property as frame and table does 
+u can use float,flexbox or grid to align elements in screen-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid Tutorial</title>
+    <style>
+    .container{
+        display: grid;
+        /* grid-template-columns: 300px 100px 100px;  create 3 column in container div not body(bc grid is used in conatiner not body) which are of size 300 100 and 100px*/
+        /* grid-template-columns: 300px auto 100px; */
+        /* grid-template-columns: 1fr 4fr 1fr;       3 coulmn created which take 1 fraction, 4 fraction and 1 fraction of conatianer div*/
+        grid-template-columns: repeat(3, auto);       /*create 3 column in conainer div which are divided in equal size using auto*/
+        grid-gap: 2rem;  /*2 rem for both column and row gap*/
+    }
+    .item{
+        /* height: 100px;
+        width: 100px; */
+        background-color: red;
+        border: 2px solid black;
+        padding: 15px 5px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">This is Item-1</div>
+        <div class="item">This is Item-2</div>
+        <div class="item">This is Item-3</div>
+        <div class="item">This is Item-4</div>
+        <div class="item">This is Item-5</div>
+        <div class="item">This is Item-6</div>
+        <div class="item">This is Item-7</div>
+        <div class="item">This is Item-8</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+    </div>
+</body>
+</html>

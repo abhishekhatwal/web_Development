@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Display property</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /*by using box sizing the padding or marigin property will not change the given width of element otherwise without boxsizing the elements define width vary/change by changing margin and padding of elelmtnts*/
+        }
+
+        header {
+            border: 2px solid red;
+            margin: auto;
+            width: 1200px;
+        }
+
+        img {
+            margin: auto;
+            display: block;
+            width: 34px;
+        }
+
+        h3 {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0px;
+        }
+
+        .box {
+            border: 4px solid black;
+            background-color: grey;
+            margin: 4px 0px;
+            padding: 23px;
+            width: 33%;                 /*this width is 33% of parent which is div(has class=container) not 33% of body*/    
+            box-sizing: border-box;
+            display: inline-block;
+            /* convert block elelment into inline*/
+        }
+        #abc{
+            display: none;     /*the 3rd div will not be visible and its relative postion is also gone so other element will take its position*/
+        }
+
+        .container {
+            margin: auto;
+            width: 1200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <img src="https://codewithharry.com/static/common/img/photo.png" alt="">
+        <h3>Welcome to Harry's Blog</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, harum ipsam aliquid deleniti, vitae
+                labore cum laudantium a blanditiis est voluptates dolorum consequuntur. Aliquam corporis, fuga
+                consectetur rerum molestias consequatur tempora natus sed laborum recusandae fugit harum soluta
+                inventore enim. Aspernatur aperiam cum reprehenderit!</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, harum ipsam aliquid deleniti, vitae
+                labore cum laudantium a blanditiis est voluptates dolorum consequuntur. Aliquam corporis, fuga
+                consectetur rerum molestias consequatur tempora natus sed laborum recusandae fugit harum soluta
+                inventore enim. Aspernatur aperiam cum reprehenderit!</p>
+        </div>
+        <div class="box" id="abc">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, harum ipsam aliquid deleniti, vitae
+                labore cum laudantium a blanditiis est voluptates dolorum consequuntur. Aliquam corporis, fuga
+                consectetur rerum molestias consequatur tempora natus sed laborum recusandae fugit harum soluta
+                inventore enim. Aspernatur aperiam cum reprehenderit!</p>
+        </div>
+
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem, </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!--claslist method= add,remove,contain,toogle,length -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .abc
+        {
+         color: aqua;
+        }
+        .xyz
+        {
+         color: rgb(172, 115, 29);
+        }
+        .def{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header" class="abc">hello</h1>
+    <h2 id="sel">hello</h2>
+    <h3 id="temp" class="abc">hello</h3>
+
+    <script>
+        document.querySelector('#header').addEventListener('click',()=>{
+            document.querySelector('#header').classList.add('xyz');           //add a class when click
+        });
+
+        document.querySelector('#sel').addEventListener('mouseover',()=>{
+            document.querySelector('#sel').classList.toggle('def');           //if a class is added then remove it and if that class is  not present then add it
+        });
+
+       if(document.getElementById('temp').classList.contains('abc'))
+       {
+        document.getElementById('temp').classList.add('xyz');
+       }
+    </script>
+</body>
+</html>

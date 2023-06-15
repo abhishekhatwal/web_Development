@@ -1,0 +1,8 @@
+<script> tag in which js we write can be embedded anywhere in html code outside body, inside body ,outside head, inside head, etc.
+if css attributes are accessing using js then it will be in camelcase eg.background-color in css is written backgroundColor(whthout using any hyphen).
+if we created any onload method in js then when page load content inside onload executed first.
+in es6 version of js string are printed using `...` 
+// are used ofr single line comment in js
+variable is js is var,let and const. var can be globally accessable let is block accessable and const is used as final its value cannot change once assign.
+if we access input type html element data from value fun in js then we will get string no matter what the input type is eg.=number,password so for arthematic calculation we need to change the string into number using parseInt js method.
+js support array,string,loop,switch,conditional statement etc all any programming lang concepts.

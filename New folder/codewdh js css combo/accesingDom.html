@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle1{
+            width: 200px;
+            height:150px;
+            background-color: blueviolet;
+            margin: 4px;
+            border-radius: 50%;
+            float: left;
+        }
+        .circle2{
+            width: 200px;
+            height:150px;
+            background-color: rgb(205, 207, 57);
+            margin: 4px;
+            border-radius: 50%;
+            float: left;
+        }
+        .circle3{
+            width: 200px;
+            height:150px;
+            background-color: rgb(11, 8, 14);
+            margin: 4px;
+            border-radius: 50%;
+            float: left;
+        }
+
+        p{
+            clear:left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="circle1" id="c1" onclick="fun3()"></div>
+    <div class="circle2" id="c2" onclick="fun4()"></div>
+    <div class="circle3" id="c3" onclick="fun5()"></div>
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia cum sint aliquam nihil iste magni accusamus! Excepturi similique totam neque.</p>
+ <button onclick="fun2()"> click here</button>
+    <button id="button1">click</button>
+    <button id="button2">click</button>
+    <script>
+
+//1st way
+        function fun3()
+        {
+            document.getElementById('c1').style.backgroundColor="red";
+        }
+
+        function fun4()
+        {
+            document.getElementById('c2').style.display="none";
+        }
+        function fun5()
+        {
+            document.getElementById('c3').style.borderRadius="0%";
+        }
+
+
+//2nd way
+        document.getElementById('button1').onclick=function()
+        {
+            document.getElementById('para').style.color="green";
+            let cont=document.getElementById('para').innerHTML;
+            document.getElementById('para').innerHTML=cont+"</br> HELLO GUYZZ"+"<h1> HOW ARE YOU </h1>";
+        }
+
+        function fun2()
+        {
+            document.getElementById('para').style.fontSize="20px";
+        }
+
+//3rd way
+        let btn2=document.getElementById('button2');
+        btn2.addEventListener('click',function btnfun(){      //do not ADD on before click or on before moveseover etc
+            console.log("hello");
+        });
+       
+
+    </script>
+
+   
+</body>
+</html>

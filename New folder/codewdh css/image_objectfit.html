@@ -1,0 +1,33 @@
+<!--The CSS object-fit property is used to specify how an <img> or <video> should be resized to fit its container.
+This property tells the content to fill the container in a variety of ways; such as "preserve that aspect ratio" or "stretch up and take up as much space as possible".
+
+fill - This is default. The image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit
+contain - The image keeps its aspect ratio, but is resized to fit within the given dimension
+cover - The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit
+none - The image is not resized
+scale-down - the image is scaled down to the smallest version of none or contain-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;     /*without giving size to div 3 img will adjust itselt inside div in manner so that all 3 div comes in a common/normal width */
+}
+</style>
+</head>
+<body>
+<div>
+<div><img src="paris.jpg" alt="Paris"></div>  
+<div><img src="paris.jpg" alt="Paris" ></div>
+<div><img src="paris.jpg" alt="Paris"></div>
+</div>
+
+
+</body>
+</html>
+

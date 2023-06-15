@@ -1,0 +1,22 @@
+<html>
+<body>
+<hl id="res">
+</hl>
+<button onclick="getDate()">Date</button>
+<button onclick="year()">Year</button>
+<button onclick="month()">Month</button>
+</body>
+<script>
+
+var date = new Date();
+function getDate() {
+document .getElementById('res').innerText = date;
+}
+function year(){
+document.getElementById('res').innerText = date.getFullYear();
+}
+function month() {
+document.getElementById('res').innerText = date.getMonth();
+}
+</script>
+</html>

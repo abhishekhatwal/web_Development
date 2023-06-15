@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+
+    <div id="main">
+        <h1>
+            abcdef
+        </h1>
+    </div>
+
+    <div class="red">
+        <p>
+            abcdef
+        </p>
+    </div>
+
+    <h2>hlo</h2>
+
+    <h3 name="blue">nothing here</h3>
+</body>
+
+<script type="text/javascript">
+    var x = document.getElementById("main").innerHTML;
+    alert(x);
+
+    document.getElementById("main").innerHTML = "<p>somthing</p>";                //innerHTML will give all the inside data of that element eg- child element,text etc
+
+    document.getElementsByClassName("red")[0].innerHTML = "<p>abhi</p>";        //getelementsByClassName will retrun colletion of elements(not a single element) whose classname is red here only one class present with classname red which index is 0(index start from 0) so [0] specify important otherwise without it innerhtml not work and result not updated . 
+
+    document.getElementsByTagName("h2")[0].innerHTML="welcome";         //same concept as classname(h2 tag element is only one present so index will be 0)
+  
+    document.getElementsByName("blue")[0].innerHTML="welcome";         //same concept as classname (blue name element is only one present so index will be 0)
+
+</script>
+
+</html>

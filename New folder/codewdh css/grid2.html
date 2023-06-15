@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid </title>
+    <style>
+    .grid{
+        display: grid;
+        grid-template-rows: 1fr 1fr 4fr;  /* create 3 row in main div(has class=grid) 1st row is 1fraction of main div 2nd row is 1 fr and 3rd row is 4 fraction of main div*/
+        grid-auto-rows: 2fr;   /* the left rows which size is not declare above grid-template-rows will be of size 2 fraction of  main div using grid-auto-rows*/
+        grid-template-columns: repeat(4, 2fr);    /*crates 4 column each column is 2 fr of main div*/
+        grid-gap: 1rem;
+    }
+    .box{
+        background-color: red;
+        border: 2px solid black;
+    }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-5</div>
+        <div class="box">This is box-6</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+    </div>
+</body>
+</html>
