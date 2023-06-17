@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        .abc{
+            height: 500px;
+            width: 500px;
+            background-color: aqua;
+            display: inline-block;
+        }
+        .img1{
+            width: 50%;           /*%width and %height mean width and height w.r.t div(parent) means 50% of 500=250 width and height of img inside div*/
+            height: 50%;
+        }
+
+        .def{
+            height: 500px;
+            width: 500px;
+            background-color: aqua;
+            display: inline-block;
+        }
+        .img2{
+            width: 50vw;          /*vw and vh mean width and height w.r.t webpage/visible body/screen not with respect to parent div and img can get out of div*/
+            height: 50vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="abc"><img class="img1" src="https://picsum.photos/200/300" alt="img"></div>
+
+    <div class="def"><img class="img2" src="https://picsum.photos/200/300" alt="img"></div>
+</body>
+</html>
