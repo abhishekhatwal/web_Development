@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body onload="setInterval(fun1,1000)">
+    <h1 id="date"></h1>
+    <h2 id="time"></h2>
+    <script>
+
+        function fun1() {
+            let x = new Date().toLocaleDateString();
+            let y = new Date().toLocaleTimeString();
+
+            document.getElementById("date").innerHTML = x;
+            document.getElementById("time").innerHTML = y;
+
+        }
+    </script>
+</body>
+
+</html>

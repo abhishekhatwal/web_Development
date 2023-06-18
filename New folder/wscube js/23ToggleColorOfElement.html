@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        #dmain {
+            background-color: red;
+        }
+
+        /*
+    .red{
+      background-color: red;
+    }
+    .yellow{
+      background-color: yellow;
+    }
+
+    */
+    </style>
+</head>
+
+
+<body>
+    <div class="red" id="dmain">
+        <button class="btn" onclick="fun1()">toggle</button>
+    </div>
+
+
+    <script>
+
+
+        function fun1() {
+            let x = document.getElementById("dmain").style.backgroundColor;
+            if (x == "red") {
+                document.getElementById("dmain").style.backgroundColor = "yellow";
+            } else {
+                document.getElementById("dmain").style.backgroundColor = "red";
+            }
+        }
+
+     //2nd way
+        /*
+             function fun1(){
+               let x=document.getElementById("dmain").getAttribute("class");
+               if(x=="red"){
+                     document.getElementById("dmain").setAttribute("class","yellow");
+               }
+               else{
+                    document.getElementById("dmain").setAttribute("class","red");
+               }
+             }
+        */
+
+
+        /*
+        document.getElementById("dmain").getAttribute("backgroundColor"); ====> wrong syntex bcz backgroundColor is a property(of style attribute) not attribute.
+        */
+    </script>
+</body>
+
+</html>
