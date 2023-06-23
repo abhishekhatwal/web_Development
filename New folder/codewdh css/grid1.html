@@ -25,6 +25,11 @@ u can use float,flexbox or grid to align elements in screen-->
         border: 2px solid black;
         padding: 15px 5px;
     }
+
+    .container1{
+        display: inline-grid;                          /* inline grid work same same as inline-block external .container1 become inline-block and  item inside it work as grid*/
+        grid-template-columns: auto auto auto;
+    }
     </style>
 </head>
 <body>
@@ -49,6 +54,16 @@ u can use float,flexbox or grid to align elements in screen-->
         <div class="item">This is Item-9</div>
         <div class="item">This is Item-9</div>
         <div class="item">This is Item-9</div>
+    </div>
+
+
+    <div class="container1">
+        <div class="item">This is Item-1</div>
+        <div class="item">This is Item-2</div>
+        <div class="item">This is Item-3</div>
+        <div class="item">This is Item-4</div>
+        <div class="item">This is Item-5</div>
+        <div class="item">This is Item-6</div>
     </div>
 </body>
 </html>
