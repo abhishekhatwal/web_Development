@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+
+    /*  grid also have justify-content and align-item like property which is same as in flexbox*/
+    .container{
+        height: 200px;
+        background-color: rgb(12, 17, 17);
+        display: grid;
+        /*display: inline-grid;                 same as inline-block plus grid added.  inside element of this conatiner will be griditems which can dispay in row column format*/
+       /* gap: 10px;      gap in grid */
+        grid-template-columns: 5rem 1fr 3fr 1fr 10rem;           /* create 5 column by default item1 item2 item3 will be present in 1st(5rem) 2nd(1fr) 3rd(3fr) column .to assign items/innerdiv into other column space use grid-colmn-start or grid-row-start(or grid-column grid-row as shorthand property)*/
+    }
+
+    .item1{
+        grid-column-start: 2;    /* this 2 line  grid-column-start and grid-column-end means item1/div1 will present in 2nd column(1fr) as starting of line for column2 is 2 and ending of line for column2  is 3 */
+        grid-column-end: 3;
+     /*   grid-column:2/3 ;     it an alternative for above property in just one line  */
+    }
+
+    .item2{
+        grid-column-start: 3;    
+        grid-column-end: 4;
+     
+    }
+
+  
+
+    .container3{
+        height: 200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;       /*grid-template-columns:1fr repeat(3,1fr);      it is alternate create 4 column of equal width repeat 3 mean 3 column will be created of 1 fr size also 1fr is given before repeat function so total 4 column will be created of equal size*/
+        grid-template-rows: 200px 200px;  
+    }
+
+    .item4{
+        grid-column: 1/2;
+    }
+    .item5{
+        grid-column: 4/5;
+    }
+
+    .item6{
+        grid-row-start: 2;            /*this div will present in 2nd row*/
+        grid-column-end: 3;
+        grid-column: 2/3;                        /*column will be 2nd*/
+    }
+
+  </style>
+</head>
+<body>
+    <div class="container" >
+    <div class="item1" style=" background-color: aqua;">1</div>
+    <div class="item2" style=" background-color: blue;">2</div>
+    
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <div class="container3" >
+    <div class="item4" style="height: 200px; background-color: pink;">1</div>
+    <div class="item5" style=" height: 200px; background-color: green;">2</div>
+    <div class="item6" style="  height: 200px; background-color: yellow;">3</div>
+</div>
+
+</body>
+</html>
