@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            background-color: antiquewhite;
+            width: auto;
+          /*  width: 600px;  */
+            display: flex;
+         
+        }           /*.blank element is sticky for(inside) .conatiner(parent) element only not stick with body(or aside form parent element other elements) .if .container move .blank also move with it but if only content inside .container(.container not move) move then .blank will remain sticky for other element inside .container*/
+        .blank {
+            width: 200px;
+            height: 200px;
+            position: sticky;
+            left: 0px;
+            top: 0px;
+            flex-shrink: 0;                   /*imp prop flexbox has default flex-shrink:1 which mean if flex-shrink:0 not given to items inside flexbox then items will be shrinks to diplay in 100vw inside flexbox*/
+            z-index: 10;
+            background-color: aqua;
+        }
+        .red {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            flex-shrink: 0;
+        }
+        .green {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            flex-shrink: 0;
+        }
+        .yellow {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            flex-shrink: 0;
+        }
+        .orange {
+            width: 200px;
+            height: 200px;
+            background-color: orchid;
+            flex-shrink: 0;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="blank">1</div>
+        <div class="red">2</div>
+        <div class="green">3</div>
+        <div class="yellow">4</div>
+        <div class="orange">5</div>
+        <div class="red">6</div>
+        <div class="green">7</div>
+        <div class="yellow">8</div>
+        <div class="orange">9</div>
+        <div class="red">10</div>
+        <div class="green">11</div>
+        <div class="yellow">12</div>
+        <div class="orange">13</div>
+    </div>
+</body>
+</html>
